@@ -1,0 +1,21 @@
+$maastricht-blue: #97caef;
+$vivid-sky-blue: #55bcc9;
+$prussian-blue: #0B2B4C;
+$deep-koamaru: #284766;
+$pearl-river: #D9DDDC;
+$pearl-river-light: rgba($pearl-river, .5);
+$primary: #000FBF;
+
+$theme-colors: (
+  'pearl-river-light': $pearl-river-light,
+  'maastricht-blue': $maastricht-blue,
+  'vivid-sky-blue': $vivid-sky-blue,
+  'prussian-blue': $prussian-blue,
+  'deep-koamaru': $deep-koamaru,
+  'pearl-river': $pearl-river,
+  'primary': $primary
+);
+
+$btn-border-radius: 0px;
+
+$sidebar-width: 280px;

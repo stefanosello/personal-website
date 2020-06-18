@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row flex-md-row-reverse">
           <div class="col-12 col-md-6 pr-md-5 pl-md-0 pb-3 pb-md-0 d-flex align-items-center">
-            <div class="bg-cover-center ar-16by9 profile-image w-100"></div>
+            <div class="bg-cover-center ar-16by9 profile-image w-100 box-shadow"></div>
           </div>
           <div class="col-12 col-md-6 px-md-5">
             <h1 class="font-weight-bold">Stefano Sello</h1>
@@ -42,16 +42,36 @@
       <div class="container px-md-5">
         <div class="w-100 bg-pearl-river separator"></div>
       </div>
+      <div class="container skills-section my-5">
+        <div class="row flex-md-row-reverse">
+          <div class="col-12 section-title px-md-5">
+            <h2 class="font-weight-bold pl-3">{{$t('home_page.projects_section.title')}}</h2>
+            <p>{{$t('home_page.projects_section.description')}}</p>
+            <div class="row mt-3 mt-md-5">
+              <div v-for="(project, index) in projects" :key="`project-${index}`" class="col-12 col-lg-6">
+                <Tile :title="project.title" :description="project.description" :image="project.image" :link="project.link"></Tile>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Tile from './Tile.vue'
 export default {
   name: 'HomePage',
+  components: {
+    Tile
+  },
   computed: {
     skills() {
       return this.$t('home_page.skills_section.skills');
+    },
+    projects() {
+      return this.$t('home_page.projects_section.projects');
     }
   }
 }
@@ -61,7 +81,6 @@ export default {
 [home-page-component] {
   .profile-image {
     background-image: url('/profile-2.JPG');
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .section-title > h2 {

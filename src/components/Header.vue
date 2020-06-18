@@ -1,6 +1,6 @@
 <template>
   <header class="header sticky-top w-100" header-component>
-    <nav class="navbar navbar-expand-md bg-deep-koamaru flex-md-column h-100">
+    <nav id="navbar" class="navbar navbar-expand-md bg-deep-koamaru flex-md-column">
       <a class="navbar-brand py-3 py-md-4" href="#">
         <h1 class="text-light mb-0">Stefano Sello</h1>
       </a>
@@ -107,12 +107,11 @@ export default {
       this.$i18n.locale = lang;
     },
     toggleBodyScroll() {
-      console.log("toggle body scroll");
       if (this.bodyScrollLocked){
         clearAllBodyScrollLocks();
         this.bodyScrollLocked = false;
       } else {
-        disableBodyScroll(this.$el);
+        disableBodyScroll(document.getElementById("navbar"));
         this.bodyScrollLocked = true;
       }
     }
@@ -122,6 +121,12 @@ export default {
 
 <style lang="scss" scoped>
 [header-component] {
+
+  #navbar {
+    min-height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
 
   h1 {
     font-weight: bold;
@@ -171,10 +176,10 @@ export default {
     height: 100vh;
 
     .nav-link {
-      transition: margin-left .5s;
+      transition: padding-left .5s;
 
       &:hover {
-        margin-left: 1.5rem;
+        padding-left: 1.5rem;
       }
     }
   }

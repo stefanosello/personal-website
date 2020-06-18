@@ -105,6 +105,22 @@ export default {
           description: "I developed a lot of experience with vanilla javascript, thanks to my current job. I think javascript is one of the most powerfull tolls a web developer has."
         },
       ]
-    }
+    },
+    projects_section: {
+      title: "Projects",
+      description: "Here some of the projects I'm most proud of. Thanks to them I've grown up, making a lot of experience and developing a deep knowledge of the skills I've mentioned above.",
+      projects: [
+        {
+          title: "H-FARM.COM",
+          image: {
+            url: "./hfarmcom.PNG"
+          },
+          description: "I took part to the development process of the H-Farm corporate website. Check out the result!",
+          link: {
+            url: "https://h-farm.com"
+          }
+        }
+      ]
+    },
   }
 }

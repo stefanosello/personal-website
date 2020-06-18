@@ -105,6 +105,13 @@ export default {
           description: "I developed a lot of experience with vanilla javascript, thanks to my current job. I think javascript is one of the most powerfull tolls a web developer has."
         },
       ]
-    }
+    },
+    projects_section: {
+      title: "Progetti",
+      description: "Ecco alcuni dei progetti di cui sono più orgoglioso. Grazie a loro sono cresciuto, facendo molta esperienza e sviluppando una profonda conoscenza delle abilità che ho menzionato sopra.",
+      projects: [
+        
+      ]
+    },
   }
 }

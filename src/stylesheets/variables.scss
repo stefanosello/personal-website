@@ -5,6 +5,10 @@ $deep-koamaru: #284766;
 $pearl-river: #D9DDDC;
 $pearl-river-light: rgba($pearl-river, .5);
 $primary: #000FBF;
+$light-blue: #AAD7E6;
+$light-green: #C5E8CC;
+$light-pink: #FFEAFD;
+$light-violet: #C7BEE1;
 
 $theme-colors: (
   'pearl-river-light': $pearl-river-light,
@@ -12,7 +16,11 @@ $theme-colors: (
   'vivid-sky-blue': $vivid-sky-blue,
   'prussian-blue': $prussian-blue,
   'deep-koamaru': $deep-koamaru,
+  'light-violet': $light-violet,
   'pearl-river': $pearl-river,
+  'light-green': $light-green,
+  'light-blue': $light-blue,
+  'light-pink': $light-pink,
   'primary': $primary
 );
 

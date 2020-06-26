@@ -115,6 +115,10 @@ export default {
           image: {
             url: "./hfarmcom.PNG"
           },
+          category: {
+            title: "website",
+            color: "light-pink"
+          },
           description: "I took part to the development process of the H-Farm corporate website. Check out the result!",
           link: {
             url: "https://h-farm.com"
@@ -124,6 +128,10 @@ export default {
           title: "H-FARM.COM",
           image: {
             url: "./hfarmcom.PNG"
+          },
+          category: {
+            title: "web app",
+            color: "light-green"
           },
           description: "I took part to the development process of the H-Farm corporate website. Check out the result!",
           link: {

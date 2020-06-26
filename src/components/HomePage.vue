@@ -48,7 +48,7 @@
             <h2 class="font-weight-bold pl-3">{{$t('home_page.projects_section.title')}}</h2>
             <p>{{$t('home_page.projects_section.description')}}</p>
             <div class="row mt-3 mt-md-5">
-              <div v-for="(project, index) in projects" :key="`project-${index}`" class="col-12 col-lg-6">
+              <div v-for="(project, index) in projects" :key="`project-${index}`" class="col-12 col-lg-6 mb-3 mb-md-4">
                 <Tile :title="project.title" :description="project.description" :image="project.image" :link="project.link"></Tile>
               </div>
             </div>

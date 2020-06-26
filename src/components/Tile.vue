@@ -1,8 +1,8 @@
 <template>
-  <a :href="link.url" target="_blank" class="w-100 d-flex bg-pearl-river-light flex-wrap box-shadow flex-md-nowrap" tile>
+  <a :href="link.url" target="_blank" class="w-100 d-flex bg-prussian-blue flex-wrap box-shadow flex-md-nowrap" tile>
     <div class="image bg-cover-center" :style="{'background-image': `url(${image.url})`}"></div>
     <div class="p-4 h-100 d-flex flex-column justify-content-center text">
-      <h4 class="font-weight-bold text-deep-koamaru">{{title}}</h4>
+      <h4 class="font-weight-bold">{{title}}</h4>
       <p>{{description}}</p>
     </div>
   </a>
@@ -23,11 +23,11 @@ export default {
 <style lang="scss" scoped>
 [tile] {
   transition: all .25s;
-  color: $deep-koamaru;
+  color: $pearl-river;
 
   &:hover {
     text-decoration: none;
-    color: $prussian-blue;
+    color: lighten($pearl-river, 35);
   }
 
   .image {

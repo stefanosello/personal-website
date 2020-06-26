@@ -110,7 +110,46 @@ export default {
       title: "Progetti",
       description: "Ecco alcuni dei progetti di cui sono più orgoglioso. Grazie a loro sono cresciuto, facendo molta esperienza e sviluppando una profonda conoscenza delle abilità che ho menzionato sopra.",
       projects: [
-        
+        {
+          title: "H-FARM.COM",
+          image: {
+            url: "./hfarmcom.PNG"
+          },
+          description: "Ho avuto il piacere di far parte del team di sviluppo del sito corporate di H-Farm. Scopri il risultato!",
+          link: {
+            url: "https://h-farm.com"
+          }
+        },
+        {
+          title: "H-FARM.COM",
+          image: {
+            url: "./hfarmcom.PNG"
+          },
+          description: "Ho avuto il piacere di far parte del team di sviluppo del sito corporate di H-Farm. Scopri il risultato!",
+          link: {
+            url: "https://h-farm.com"
+          }
+        },
+        {
+          title: "H-FARM.COM",
+          image: {
+            url: "./hfarmcom.PNG"
+          },
+          description: "Ho avuto il piacere di far parte del team di sviluppo del sito corporate di H-Farm. Scopri il risultato!",
+          link: {
+            url: "https://h-farm.com"
+          }
+        },
+        {
+          title: "H-FARM.COM",
+          image: {
+            url: "./hfarmcom.PNG"
+          },
+          description: "Ho avuto il piacere di far parte del team di sviluppo del sito corporate di H-Farm. Scopri il risultato!",
+          link: {
+            url: "https://h-farm.com"
+          }
+        }
       ]
     },
   }

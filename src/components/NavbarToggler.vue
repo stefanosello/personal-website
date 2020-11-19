@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="navbar-toggler collapsed px-0" data-toggle="collapse" :data-target="`#${collapsibleNavbarId}`" @click="$emit('toggle-body-scroll')" navbar-toggler-component>
+  <button type="button" class="navbar-toggler collapsed px-0" data-toggle="collapse" @click="$emit('toggle-navbar')" navbar-toggler-component>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
@@ -8,13 +8,7 @@
 
 <script>
 export default {
-  name: 'NavbarToggler',
-  props: {
-    collapsibleNavbarId: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'NavbarToggler'
 }
 </script>
 

@@ -6,6 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faLaptopCode, faFileCode, faBlog, faAddressBook, faGem, faServer } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter, faVuejs, faJsSquare, faAngular, faNodeJs, faPython, faPhp, faHtml5, faCss3Alt, faSass } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import JQuery from 'jquery';
+window.$ = window.JQuery = JQuery;
 
 import i18n from './modules/translations-module';
 import router from './modules/router-module';

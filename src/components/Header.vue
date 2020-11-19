@@ -5,7 +5,7 @@
         <h1 class="text-light mb-0">Stefano Sello</h1>
       </a>
 
-      <NavbarToggler @toggle-body-scroll="toggleBodyScroll()" collapsibleNavbarId="collapsibleNavbar"/>
+      <NavbarToggler @toggle-navbar="toggleNavbar()"/>
       
       <div class="collapse navbar-collapse flex-column w-100 align-items-start" id="collapsibleNavbar">
         <div class="w-100 profile-image pt-3">
@@ -99,20 +99,22 @@ export default {
   },
   data() {
     return {
-      bodyScrollLocked: false
+      expanded: false
     }
   },
   methods: {
     changeLocale(lang) {
       this.$i18n.locale = lang;
     },
-    toggleBodyScroll() {
-      if (this.bodyScrollLocked){
+    toggleNavbar() {
+      if (this.expanded){
         clearAllBodyScrollLocks();
-        this.bodyScrollLocked = false;
+        window.$("#collapsibleNavbar").collapse('hide');
+        this.expanded = false;
       } else {
         disableBodyScroll(document.getElementById("navbar"));
-        this.bodyScrollLocked = true;
+        window.$("#collapsibleNavbar").collapse('show');
+        this.expanded = true;
       }
     }
   }
